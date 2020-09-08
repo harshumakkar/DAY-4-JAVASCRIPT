@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Try to replace "Microsoft" with "Harshleen" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("MICROSOFT","Harshleen");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<p><strong>Note:</strong> Nothing will happen. By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work.</p>
+
+</body>
+</html>
